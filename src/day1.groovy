@@ -5,8 +5,8 @@
 
 assert calculateFuel(12) == 2
 assert calculateFuel(14) == 2
-assert calculateFuel(1969)
-assert calculateFuel(100756)
+assert calculateFuel(1969) == 654
+assert calculateFuel(100756) == 33583
 
 assert calculateFuel(14, true) == 2
 assert calculateFuel(1969, true) == 966

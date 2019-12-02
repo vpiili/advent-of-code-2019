@@ -18,7 +18,7 @@ println "Part 1 --  ${fuelCounterUpper(input)}"
 println "Part 2 --  ${fuelCounterUpper(input, true)}"
 
 def fuelCounterUpper(List input, part2 = false) {
-    return input.inject(0) { acc, line -> acc += calculateFuel(Integer.parseInt(line), part2) }
+    return input.inject(0) { acc, line -> acc = calculateFuel(Integer.parseInt(line), part2) }
 }
 
 def calculateFuel(int input, part2 = false, int totalFuel = 0) {
